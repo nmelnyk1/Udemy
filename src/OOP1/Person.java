@@ -25,7 +25,7 @@ public void setLastName(String lastName) {
 	this.lastName=lastName;
 }
 
-public void setAge() {
+public void setAge(int age) {
 	if(age < 0 || age > 100) {
 		this.age= 0;
 	}else {

@@ -21,7 +21,7 @@ public void setFirstName(String firstName) {
 	this.firstName=firstName ;
 }
 
-public void setLastName() {
+public void setLastName(String lastName) {
 	this.lastName=lastName;
 }
 

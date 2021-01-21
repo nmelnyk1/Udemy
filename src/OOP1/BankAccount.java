@@ -2,11 +2,24 @@ package OOP1;
 
 public class BankAccount {
 
-	private int number;
+	private String number;
 	private double balance;
 	private String customerName;
 	private String email;
 	private int phoneNumber;
+	
+	public BankAccount() {
+		System.out.println("Empry constructor called");
+	}
+	
+	public BankAccount(String number, double balance, String customerName, String email, int phoneNumber) {
+		this.number=number;
+		this.balance=balance;
+		this.customerName=customerName;
+		this.email=email;
+		this.phoneNumber=phoneNumber;
+		System.out.println("Account constructor will be called");
+	}
 	
 	public void deposit (double depositAmount) {
 		this.balance = balance + depositAmount;
@@ -22,10 +35,10 @@ public class BankAccount {
 		}
 	}
 	
-	public int getNumber() {
+	public String getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {
+	public void setNumber(String number) {
 		this.number = number;
 	}
 	public double getBalance() {

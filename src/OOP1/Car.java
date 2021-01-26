@@ -10,6 +10,7 @@ private String colour;
 // create a method that is attached to all objects that you create for that particular class
 
 public void setModel(String model) {
+	// here we set the rules what car is valid and what is not created
 	String validationModel = model;
 	if(validationModel.equals("carrera") || validationModel.equals("Common")) {
 	this.model = model;
